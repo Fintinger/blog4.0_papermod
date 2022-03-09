@@ -1,11 +1,12 @@
 ---
 title: PHP语法小结
-date: 2020-10-13
+date: 2020-10-14
 categories:
  - 后端
  - 学习总结
 tags:
  - PHP 
+weight: 3
 ---
 
 ## 基本语法

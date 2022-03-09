@@ -6,13 +6,6 @@ categories:
 tags:
  - windows
 image: https://c.s-microsoft.com/en-us/CMSImages/hero_animation_poster_4K_Sharpened.jpg?version=e252e57c-4949-6726-4a60-a50c0aeec2ce
-cover:
-    image: "https://c.s-microsoft.com/en-us/CMSImages/hero_animation_poster_4K_Sharpened.jpg?version=e252e57c-4949-6726-4a60-a50c0aeec2ce"
-    # can also paste direct link from external site
-    # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
-    alt: "<alt text>"
-    caption: "<text>"
-    relative: false #
 ---
 
 ## 创建U盘介质
