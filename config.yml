@@ -76,7 +76,7 @@ params:
     enabled: true # needs to be explicitly set
     title: ARCHAI
     subtitle: 
-    imageUrl: "images/head.gif"
+    imageUrl: "https://jqf.oss-cn-beijing.aliyuncs.com/images/blog4.0_papermod/head.gif"
     imageWidth: 150
     imageHeight: 150
     imageTitle: my image
