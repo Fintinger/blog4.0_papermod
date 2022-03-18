@@ -13,8 +13,7 @@
  1 2 3 4 5 6 7  let b=Object.create(null,{ a:{value:&#39;ohh&#39;, enumerable:true}, b:{value:&#39;jqf&#39;}, }) console.log(Object.getOwnPropertyDescriptors(b)); //a: {value: &#34;ohh&#34;, writable: false, enumerable: true, configurable: false} //b: {value: &#34;jqf&#34;, writable: false, enumerable: false, configurable: false}   __proto__ 说明： 能设置，能获取，实质上是setter，getter">
 <meta name="author" content="Archai">
 <link rel="canonical" href="https://www.fintinger.site/p/javascript%E4%B8%AD%E7%9A%84%E7%BB%A7%E6%89%BF%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE%E5%88%86%E6%9E%90/" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.4ee57c4189977dc8f075173100c24a668d6bb09d6b5db74440649223f1221877.css" integrity="sha256-TuV8QYmXfcjwdRcxAMJKZo1rsJ1rXbdEQGSSI/EiGHc=" rel="preload stylesheet" as="style">
-<link rel="stylesheet" href="css/extended/custom.css">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.1094bd734d653eed58c7d5d365922a452c230550185db0f6edb2724fce58fec9.css" integrity="sha256-EJS9c01lPu1Yx9XTZZIqRSwjBVAYXbD27bJyT85Y/sk=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico">
@@ -845,6 +844,16 @@ Object.<span style="color:#a6e22e">assign</span>(<span style="color:#a6e22e">Mem
         }
     });
 </script>
+<video id="liveBgBox" autoplay="" loop="true" muted="" src="https://lc-gluttony.s3.amazonaws.com/jzhqULdhhNJt/MWeqpRGb3eRSrU366dvl9hbdvgRHwtPY/7kgkoysahpw31.mp4" ></video>
 </body>
-
+<script>
+    let vid=document.getElementById("liveBgBox");
+    let profile=document.getElementsByClassName("profile")[0];
+    if(!profile){
+        vid.style.display="none";
+    }
+    window.onload=function(){
+        vid.play();
+    }
+</script>
 </html>

@@ -23,8 +23,7 @@
  递增策略： 为算术级数，0&#43;I&#43;2I&#43;&hellip;=O(n ²) 倍增策略： 为几何级数，1&#43;2¹&#43;2²&#43;2³&#43;&hellip;=O(2^m)=O(n)      递增策略 倍增策略     累计时间 O(n ²) O(n)   分摊时间 O(n) O(1)   装填因子 λ ≈100% &gt;50%    可以看出，倍增策略在牺牲空间的基础上，换取时间上的巨大提升，可采取√">
 <meta name="author" content="Archai">
 <link rel="canonical" href="https://www.fintinger.site/p/%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5/" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.4ee57c4189977dc8f075173100c24a668d6bb09d6b5db74440649223f1221877.css" integrity="sha256-TuV8QYmXfcjwdRcxAMJKZo1rsJ1rXbdEQGSSI/EiGHc=" rel="preload stylesheet" as="style">
-<link rel="stylesheet" href="css/extended/custom.css">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.1094bd734d653eed58c7d5d365922a452c230550185db0f6edb2724fce58fec9.css" integrity="sha256-EJS9c01lPu1Yx9XTZZIqRSwjBVAYXbD27bJyT85Y/sk=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico">
@@ -488,6 +487,16 @@
         }
     });
 </script>
+<video id="liveBgBox" autoplay="" loop="true" muted="" src="https://lc-gluttony.s3.amazonaws.com/jzhqULdhhNJt/MWeqpRGb3eRSrU366dvl9hbdvgRHwtPY/7kgkoysahpw31.mp4" ></video>
 </body>
-
+<script>
+    let vid=document.getElementById("liveBgBox");
+    let profile=document.getElementsByClassName("profile")[0];
+    if(!profile){
+        vid.style.display="none";
+    }
+    window.onload=function(){
+        vid.play();
+    }
+</script>
 </html>

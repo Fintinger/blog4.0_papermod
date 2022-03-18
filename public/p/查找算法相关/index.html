@@ -19,8 +19,7 @@
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  typedef struct{//查找表的数据结构（顺序表）  int *elem;//动态数组基址  int TableLen;//查找表长度 }SSTable; int BinarySearch(SSTable L,int key){ int low=0,high=L.">
 <meta name="author" content="Archai">
 <link rel="canonical" href="https://www.fintinger.site/p/%E6%9F%A5%E6%89%BE%E7%AE%97%E6%B3%95%E7%9B%B8%E5%85%B3/" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.4ee57c4189977dc8f075173100c24a668d6bb09d6b5db74440649223f1221877.css" integrity="sha256-TuV8QYmXfcjwdRcxAMJKZo1rsJ1rXbdEQGSSI/EiGHc=" rel="preload stylesheet" as="style">
-<link rel="stylesheet" href="css/extended/custom.css">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.1094bd734d653eed58c7d5d365922a452c230550185db0f6edb2724fce58fec9.css" integrity="sha256-EJS9c01lPu1Yx9XTZZIqRSwjBVAYXbD27bJyT85Y/sk=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico">
@@ -761,6 +760,16 @@ $$
         }
     });
 </script>
+<video id="liveBgBox" autoplay="" loop="true" muted="" src="https://lc-gluttony.s3.amazonaws.com/jzhqULdhhNJt/MWeqpRGb3eRSrU366dvl9hbdvgRHwtPY/7kgkoysahpw31.mp4" ></video>
 </body>
-
+<script>
+    let vid=document.getElementById("liveBgBox");
+    let profile=document.getElementsByClassName("profile")[0];
+    if(!profile){
+        vid.style.display="none";
+    }
+    window.onload=function(){
+        vid.play();
+    }
+</script>
 </html>

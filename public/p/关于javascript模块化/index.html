@@ -12,8 +12,7 @@
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30  let _module = (function () { let moduleList = {} function define(name, modules, action) { modules.map((n, i) =&gt; { //将传入的只含名称的模块数组 =&gt; 指定名称模块的返回结果  modules[i] = moduleList[n] }) moduleList[name] = action.apply(null, modules) // console.log(moduleList);  } return {define} })(); //定义一个工具库，暴露给外界使用，输出 _module.">
 <meta name="author" content="Archai">
 <link rel="canonical" href="https://www.fintinger.site/p/%E5%85%B3%E4%BA%8Ejavascript%E6%A8%A1%E5%9D%97%E5%8C%96/" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.4ee57c4189977dc8f075173100c24a668d6bb09d6b5db74440649223f1221877.css" integrity="sha256-TuV8QYmXfcjwdRcxAMJKZo1rsJ1rXbdEQGSSI/EiGHc=" rel="preload stylesheet" as="style">
-<link rel="stylesheet" href="css/extended/custom.css">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.1094bd734d653eed58c7d5d365922a452c230550185db0f6edb2724fce58fec9.css" integrity="sha256-EJS9c01lPu1Yx9XTZZIqRSwjBVAYXbD27bJyT85Y/sk=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico">
@@ -641,6 +640,16 @@
         }
     });
 </script>
+<video id="liveBgBox" autoplay="" loop="true" muted="" src="https://lc-gluttony.s3.amazonaws.com/jzhqULdhhNJt/MWeqpRGb3eRSrU366dvl9hbdvgRHwtPY/7kgkoysahpw31.mp4" ></video>
 </body>
-
+<script>
+    let vid=document.getElementById("liveBgBox");
+    let profile=document.getElementsByClassName("profile")[0];
+    if(!profile){
+        vid.style.display="none";
+    }
+    window.onload=function(){
+        vid.play();
+    }
+</script>
 </html>

@@ -41,8 +41,7 @@ end()返回最后一次破坏性操作之前的DOM
 contents()返回所有子节点的集合">
 <meta name="author" content="Archai">
 <link rel="canonical" href="https://www.fintinger.site/p/jquery%E4%B8%80%E4%BA%9B%E6%93%8D%E4%BD%9C/" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.4ee57c4189977dc8f075173100c24a668d6bb09d6b5db74440649223f1221877.css" integrity="sha256-TuV8QYmXfcjwdRcxAMJKZo1rsJ1rXbdEQGSSI/EiGHc=" rel="preload stylesheet" as="style">
-<link rel="stylesheet" href="css/extended/custom.css">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.1094bd734d653eed58c7d5d365922a452c230550185db0f6edb2724fce58fec9.css" integrity="sha256-EJS9c01lPu1Yx9XTZZIqRSwjBVAYXbD27bJyT85Y/sk=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico">
@@ -1013,6 +1012,16 @@ layer.open({
         }
     });
 </script>
+<video id="liveBgBox" autoplay="" loop="true" muted="" src="https://lc-gluttony.s3.amazonaws.com/jzhqULdhhNJt/MWeqpRGb3eRSrU366dvl9hbdvgRHwtPY/7kgkoysahpw31.mp4" ></video>
 </body>
-
+<script>
+    let vid=document.getElementById("liveBgBox");
+    let profile=document.getElementsByClassName("profile")[0];
+    if(!profile){
+        vid.style.display="none";
+    }
+    window.onload=function(){
+        vid.play();
+    }
+</script>
 </html>

@@ -36,10 +36,10 @@ params:
   keywords: [Blog, Portfolio, PaperMod]
   author: Archai
   # author: ["Me", "You"] # multiple authors
-  images: ["https://gitee.com/fintinger/figure-bed/raw/master//images/20210803221048.jpeg"]
+  images: 
   DateFormat: "January 2, 2006"
   defaultTheme: light # dark, light
-  disableThemeToggle: false
+  disableThemeToggle: true
 
 
 
@@ -59,9 +59,9 @@ params:
   assets:
     disableHLJS: false # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico"
-    favicon16x16: "https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico"
-    favicon32x32: "https://gitee.com/fintinger/figure-bed/raw/master//images/20210530080206.ico"
+    favicon: "images/favicon.ico"
+    favicon16x16: "images/favicon.ico"
+    favicon32x32: "images/favicon.ico"
     # apple_touch_icon: "<link / abs url>"
     # safari_pinned_tab: "<link / abs url>"
 
@@ -76,9 +76,9 @@ params:
     enabled: true # needs to be explicitly set
     title: ARCHAI
     subtitle: 
-    imageUrl: "https://gitee.com/fintinger/figure-bed/raw/master//images/20210803221048.jpeg"
-    imageWidth: 200
-    imageHeight: 200
+    imageUrl: "images/head.gif"
+    imageWidth: 150
+    imageHeight: 150
     imageTitle: my image
     buttons:
       - name: Posts
