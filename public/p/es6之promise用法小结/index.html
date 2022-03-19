@@ -13,7 +13,7 @@
 1 2 3 4 5 6 7  new Promise((resolve, reject) =&gt; { resolve(&#39;success&#39;) //reject(&#39;rejected&#39;) }).">
 <meta name="author" content="Archai">
 <link rel="canonical" href="https://www.fintinger.site/p/es6%E4%B9%8Bpromise%E7%94%A8%E6%B3%95%E5%B0%8F%E7%BB%93/" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.8beadb01ac86b014d0fb007604cc7da4cedc8da4d3dface8f39450c73b8f5b10.css" integrity="sha256-i&#43;rbAayGsBTQ&#43;wB2BMx9pM7cjaTT36zo85RQxzuPWxA=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c70fe7a765b250c57b69e8dccf90fd37034279a0e9a06e7607fb22a05b0f5589.css" integrity="sha256-xw/np2WyUMV7aejcz5D9NwNCeaDpoG52B/sioFsPVYk=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.fintinger.site/images/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.fintinger.site/images/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.fintinger.site/images/favicon.ico">
@@ -29,11 +29,7 @@
         }
 
     </style>
-</noscript><script>
-    if(window.screen.width<=640&&window.location.pathname=="/"){
-            window.location.pathname="posts"
-    }
-</script><meta property="og:title" content="ES6之Promise用法小结" />
+</noscript><meta property="og:title" content="ES6之Promise用法小结" />
 <meta property="og:description" content="Promise 对象用于表示一个异步操作的最终完成 (或失败), 及其结果值。其目的主要是解决以往回调中嵌套回调的&quot;嵌套地狱&quot;问题，使代码可读性更好，更美观!
 基本用法 对于一个标准的Prommise，其基本写法为:
 1 2 3 4 5 6 7 8 9 10 11 12 13  new Promise(function (resolve, reject) { //do something...  //success  resolve(&#39;success&#39;) //fail &amp; reject  // reject(&#39;rejected&#39;) *resolve和reject只能出现一个 }).then( function (value) { //if succeed,do something...  }, function (reason) { //if fail &amp; reject,do something...  } )   如果采用ES6的箭头函数写法，则为:
@@ -809,7 +805,79 @@ Promise.<span style="color:#a6e22e">race</span>([<span style="color:#a6e22e">p1<
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
-</a>
+</a><script>
+    if (window.screen.width <= 640 && window.location.pathname == "/") {
+        document.querySelector(".profile_inner").style.opacity = 1;
+    }
+</script>
+
+<script>
+    if (window.location.pathname!="/") {
+        randomLine();
+    }
+    document.body.addEventListener("dblclick", _ => {
+        document.querySelector("canvas").remove();
+        randomLine();
+    })
+    
+    function randomLine() {
+        function n(n, e, t) {
+            return n.getAttribute(e) || t
+        }
+        function e(n) {
+            return document.getElementsByTagName(n)
+        }
+        function t() {
+            var t = e("script"), o = t.length, i = t[o - 1];
+            return { l: o, z: n(i, "zIndex", -88), o: n(i, "opacity", ro()), c: n(i, "color", rc()), n: n(i, "count", 300) }
+        }
+        
+        function r() {
+            return Math.floor(Math.random() * 255);
+        }
+        function rc() {
+            return `${r()},${r()},${r()}`
+        }
+        function ro() {
+            return (Math.floor((Math.random() * 4 + 5))) / 10
+        }
+        
+        function o() {
+            a = m.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+                c = m.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+        }
+        function i() {
+            r.clearRect(0, 0, a, c);
+            var n, e, t, o, m, l;
+            s.forEach(function (i, x) {
+                for (i.x += i.xa, i.y += i.ya, i.xa *= i.x > a || i.x < 0 ? -1 : 1, i.ya *= i.y > c || i.y < 0 ? -1 : 1, r.fillRect(i.x - .5, i.y - .5, 1, 1), e = x + 1; e < u.length; e++)n = u[e],
+                    null !== n.x && null !== n.y && (o = i.x - n.x, m = i.y - n.y,
+                        l = o * o + m * m, l < n.max && (n === y && l >= n.max / 2 && (i.x -= .03 * o, i.y -= .03 * m),
+                            t = (n.max - l) / n.max, r.beginPath(), r.lineWidth = t / 2, r.strokeStyle = "rgba(" + d.c + "," + (t + .2) + ")", r.moveTo(i.x, i.y), r.lineTo(n.x, n.y), r.stroke()))
+            }),
+                x(i)
+        }
+        var a, c, u, m = document.createElement("canvas"),
+            d = t(), l = "c_n" + d.l, r = m.getContext("2d"),
+            x = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+                function (n) {
+                    window.setTimeout(n, 1e3 / 45)
+                },
+            w = Math.random, y = { x: null, y: null, max: 2e4 }; m.id = l, m.style.cssText = "position:fixed;top:0;left:0;z-index:" + d.z + ";opacity:" + d.o, e("body")[0].appendChild(m), o(), window.onresize = o,
+                window.onmousemove = function (n) {
+                    n = n || window.event, y.x = n.clientX, y.y = n.clientY
+                },
+                window.onmouseout = function () {
+                    y.x = null, y.y = null
+                };
+        for (var s = [], f = 0; d.n > f; f++) {
+            var h = w() * a, g = w() * c, v = 2 * w() - 1, p = 2 * w() - 1; s.push({ x: h, y: g, xa: v, ya: p, max: 6e3 })
+        }
+        u = s.concat([y]),
+            setTimeout(function () { i() }, 100)
+    };
+
+</script>
 
 <script>
     let menu = document.getElementById('menu')
@@ -926,5 +994,4 @@ window.onerror=function(){return true;}
     }
 
 </script>
-
 </html>
