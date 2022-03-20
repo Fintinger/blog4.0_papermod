@@ -6,7 +6,6 @@ categories:
  - 学习总结
 tags:
  - PHP 
-weight: 3
 ---
 
 ## 基本语法
