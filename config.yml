@@ -22,7 +22,7 @@ outputs:
         - RSS
         - JSON
 
-DefaultContentLanguage: en
+DefaultContentLanguage: zh-cn
 
 permalinks:
     posts: /p/:slug/
@@ -37,7 +37,7 @@ params:
   author: Archai
   # author: ["Me", "You"] # multiple authors
   images: 
-  DateFormat: "January 2, 2006"
+  DateFormat: ":date_medium"
   defaultTheme: light # dark, light
   disableThemeToggle: true
 
@@ -199,8 +199,15 @@ markup:
       anchorLineNos: false
       codeFences: true
       guessSyntax: false
+      hl_Lines: ""
+      lineAnchors: ""
+      lineNoStart: 1
+      lineNos: false
+      lineNumbersInTable: true
       noClasses: true
-      lineNos: true
+      noHl: false
+      style: monokai
+      tabWidth: 4
       # style: monokai
       # tabWidth: 8
     goldmark:

@@ -22,4 +22,4 @@ image: https://picsum.photos/seed/formulary/640/360
 
 ## YO起来！
 
-
+{{< bilibili "BV1dg41157Uy" >}}
