@@ -9,13 +9,13 @@
 
 √ 新增首页背景图用Blob加密，优化代码结构 <Thu Mar 31>
 
-√ 代码结构优化，新增bilibili个平台视频解析
+√ 代码结构优化，新增bilibili个平台视频解析 <Mon Apr 04>
 
 - bilibili：`{{< bilibili AV号或BV号 >}} {{< bilibili AV号或BV号 分P号 >}}`
 - tencent：`{{< tencent  b31563j0jqw >}}`
 - 自定义视频：`{{< video src="./video.mp4" autoplay="true" poster="./video-poster.png" >}}`
 
-□ 差优化评论功能(莫名其妙加载不出来评论😑)
+√ 引入animate.css加入动效，评论区优化 <Tue Apr 05>
 
 □ 想做个音乐播放器组件😛
 
